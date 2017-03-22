@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "php": "~7.0",
+        "php": "~5.6|~7.0",
         "cartalyst/sentinel": "^2.0",
         "illuminate/auth": "^5.4"
     },
