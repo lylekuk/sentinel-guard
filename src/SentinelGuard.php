@@ -40,17 +40,17 @@ class SentinelGuard implements StatefulGuard
         }
 
         $persistences = $this->sentinel->getPersistenceRepository();
-        if ( ! $code = $persistences->check()) {
+        if (! $code = $persistences->check()) {
             return false;
         }
 
-        if ( ! $user = $persistences->findUserByPersistenceCode($code)) {
+        if (! $user = $persistences->findUserByPersistenceCode($code)) {
             return false;
         }
 
         $this->viaRemember = true;
 
-        if ( ! $this->sentinel->doCycleCheckpoints('check', $user)) {
+        if (! $this->sentinel->doCycleCheckpoints('check', $user)) {
             return false;
         }
 
@@ -163,7 +163,7 @@ class SentinelGuard implements StatefulGuard
     public function loginUsingId($id, $remember = false)
     {
         $user = $this->sentinel->getUserRepository()->findById($id);
-        if ( ! $user) {
+        if (! $user) {
             return false;
         }
 
