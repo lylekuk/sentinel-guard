@@ -17,10 +17,20 @@ Via Composer
 $ composer require rojtjo/sentinel-guard
 ```
 
-## Usage
+Install the service provider:
+```
+// config/app.php
 
-Configure the guard in `config/auth.php`
+'providers' => [
+    ...
+    Rojtjo\SentinelGuard\SentinelGuardServiceProvider::class,
+],
+```
+
+Configure the guard:
 ``` php
+// config/auth.php
+
 [
     'guards' => [
         'web' => [
