@@ -66,7 +66,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-downloads]: https://img.shields.io/packagist/dt/rojtjo/sentinel-guard.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/rojtjo/sentinel-guard
-[link-travis]: https://travis-ci.org/rojtjo/sentinel-guard
+[link-travis]: https://travis-ci.org/Rojtjo/sentinel-guard
 [link-scrutinizer]: https://scrutinizer-ci.com/g/rojtjo/sentinel-guard/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/rojtjo/sentinel-guard
 [link-downloads]: https://packagist.org/packages/rojtjo/sentinel-guard
