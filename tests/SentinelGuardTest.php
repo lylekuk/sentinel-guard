@@ -254,7 +254,7 @@ class SentinelGuardTest extends TestCase
     /**
      * @return array
      */
-    private function fakeCredentials(): array
+    private function fakeCredentials()
     {
         return [
             'email' => 'john.doe@example.com',
@@ -265,7 +265,7 @@ class SentinelGuardTest extends TestCase
     /**
      * @return User
      */
-    private function fakeUser(): User
+    private function fakeUser()
     {
         return tap(new User(), function (User $user) {
             $user->id = 123;
