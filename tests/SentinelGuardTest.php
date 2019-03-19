@@ -36,6 +36,7 @@ class SentinelGuardTest extends TestCase
         $persistenceRepo->findUserByPersistenceCode('123')->willReturn($user)->shouldBeCalled();
         $this->sentinel->doCycleCheckpoints('check', $user)->willReturn(true)->shouldBeCalled();
         $this->sentinel->getPersistenceRepository()->willReturn($persistenceRepo->reveal())->shouldBeCalled();
+        $this->sentinel->getUser()->willReturn(null)->shouldBeCalled();
 
         $this->assertTrue($this->subject->check());
         $this->assertTrue($this->subject->viaRemember());
