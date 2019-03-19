@@ -35,7 +35,7 @@ class SentinelGuard implements StatefulGuard
      */
     public function check()
     {
-        if ($this->user !== null) {
+        if ($this->sentinel->getUser() !== null) {
             return true;
         }
 
