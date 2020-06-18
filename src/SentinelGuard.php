@@ -3,12 +3,13 @@
 namespace Rojtjo\SentinelGuard;
 
 use Illuminate\Auth\GuardHelpers;
+use Illuminate\Support\Traits\Macroable;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\StatefulGuard;
 
 class SentinelGuard implements StatefulGuard
 {
-    use GuardHelpers;
+    use GuardHelpers, Macroable;
 
     /**
      * @var Sentinel
