@@ -18,12 +18,14 @@
     ],
     "require": {
         "php": "~7.2",
-        "cartalyst/sentinel": "^4.0",
-        "illuminate/auth": "^7.0"
+        "cartalyst/sentinel": "^5.1",
+        "illuminate/auth": "^8.0"
     },
     "require-dev": {
-        "illuminate/database": "^7.0",
-        "phpunit/phpunit": "^8.0",
+        "illuminate/database": "^8.0",
+        "phpspec/prophecy": "^1.15",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.5",
         "squizlabs/php_codesniffer": "^2.3"
     },
     "autoload": {
